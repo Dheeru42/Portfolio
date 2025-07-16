@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dheeraj Varshney | ML & DL Engineer</title>
+    <link rel="icon" type="image/png" href="dh.png" />
+    <style>
+    :root {
+      --primary: #2a9d8f;
+      --bg: #f4f6f8;
+      --dark: #1e2a38;
+      --text: #2d3436;
+      --card-bg: #fff;
+    }
+
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, var(--dark), #34495e);
+      color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 1rem;
+    }
+
+    .nav-links a {
+      color: #eee;
+      text-decoration: none;
+      padding: 0.4rem 0.75rem;
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      padding: 2rem 5%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fade 0.5s ease-in-out;
+    }
+
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--dark);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: var(--primary);
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      color: var(--dark);
+      border-bottom: 3px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .project-grid, .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card, .cert-card {
+      background: var(--card-bg);
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover, .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3, .cert-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .card p, .cert-card p {
+      margin-bottom: 0.75rem;
+    }
+
+    .card a, .cert-card a {
+      text-decoration: none;
+      color: #fff;
+      background: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .card a:hover, .cert-card a:hover {
+      background: #21867a;
+    }
+
+    .cert-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+    }
+  </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Dheeraj Varshney</div>
+      <ul class="nav-links">
+        <li><a href="#" data-tab="home">Home</a></li>
+        <li><a href="#" data-tab="certificates">Certificates</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="tab-content active">
+        <div class="hero">
+          <h1>Hello, I’m Dheeraj Varshney</h1>
+          <p>Machine Learning & Deep Learning Engineer</p>
+        </div>
+
+        <section class="about">
+          <h2>About Me</h2>
+          <div
+            style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; margin-top: 1.5rem;">
+
+            <!-- Profile Image -->
+            <div style="flex: 1 1 250px; text-align: center;">
+              <img src="dh.png" alt="Dheeraj Varshney"
+                style="max-width: 100%; border-radius: 12px; box-shadow: 0 8px 18px rgba(0,0,0,0.15);">
+            </div>
+
+            <!-- Bio & Contact -->
+            <div style="flex: 2 1 400px;">
+              <div
+                style="background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 1rem;">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                  I'm a <strong>Machine Learning & Deep Learning
+                    Engineer</strong> passionate about building AI-driven tools,
+                  intelligent systems, and integrating data science into
+                  practical, scalable web applications. I love solving
+                  real-world problems with creativity, algorithms, and clean
+                  design.
+                </p>
+                <p style="font-size: 1.1rem;">
+                  With strong foundations in Python, computer vision, and
+                  full-stack development, I continuously explore new
+                  technologies to enhance both backend intelligence and frontend
+                  experience.
+                </p>
+              </div>
+              <div
+                style="background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <ul style="list-style: none; padding-left: 0;">
+                  <li style="margin-bottom: 1rem;">
+                    📧 <strong>Email:</strong><br>
+                    <a href="mailto:dheerajvarshney74@gmail.com"
+                      style="color: var(--primary); text-decoration: none;">dheerajvarshney74@gmail.com</a>
+                  </li>
+                  <li style="margin-bottom: 1rem;">
+                    💼 <strong>GitHub:</strong><br>
+                    <a href="https://github.com/Dheeru42" target="_blank"
+                      style="color: var(--primary); text-decoration: none;">github.com/Dheeru42</a>
+                  </li>
+                  <li style="margin-bottom: 1rem;">
+                    🔗 <strong>LinkedIn:</strong><br>
+                    <a href="#" target="_blank"
+                      style="color: var(--primary); text-decoration: none;">Dheeraj
+                      Varshney</a>
+                  </li>
+                  <li>
+                    📱 <strong>Phone:</strong><br>
+                    +91 9411272563
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <div class="card">
+              <h3>First Aid - Disease Prediction</h3>
+              <p>Health assistant predicting diseases from symptoms using
+                machine learning.</p>
+              <a href="https://first-aid-wqvr.onrender.com/"
+                target="_blank">View Project →</a>
+            </div>
+            <div class="card">
+              <h3>Eagle Insight</h3>
+              <p>Vehicle Number Plate Detection & Stolen Alert System using
+                Django & OpenCV.</p>
+              <a
+                href="https://www.erpublications.com/uploaded_files/download/mr-rohit-yadav-dheeraj-varshney-abhay-kumar-giri-jayant-varshney_UWUce.pdf"
+                target="_blank">Research Paper →</a>
+            </div>
+            <div class="card">
+              <h3>AcademicPluss</h3>
+              <p>PHP platform for student doubt solving & academic
+                collaboration.</p>
+            </div>
+            <div class="card">
+              <h3>MBD Filling Station Website</h3>
+              <p>Responsive web design for fuel station using HTML, CSS, JS.</p>
+              <a href="https://dheeru42.github.io/MBDfilling/"
+                target="_blank">View Site →</a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Internship Section -->
+      <section class="internships">
+        <h2>Internships</h2>
+        <div class="project-grid">
+          <div class="card">
+            <h3>Machine Learning Intern</h3>
+            <p><strong>Company:</strong> Stealth Mode Startup</p>
+            <p><strong>Duration:</strong> May 2024 – July 2024</p>
+            <p>Worked on real-time predictive models, data preprocessing
+              pipelines, and deployed ML APIs for health analytics and alert
+              systems.</p>
+          </div>
+          <div class="card">
+            <h3>Deep Learning Intern</h3>
+            <p><strong>Organization:</strong> Skill Void & Great Learning</p>
+            <p><strong>Duration:</strong> April 2023 – May 2023</p>
+            <p>Focused on neural networks, image classification, and CNN-based
+              project implementations using TensorFlow and PyTorch.</p>
+          </div>
+          <!-- Add more internships if needed -->
+        </div>
+      </section>
+
+      <!-- Certificate Section -->
+      <section id="certificates" class="tab-content">
+        <h2>My Certificates</h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <img src="path/to/certificate1.jpg" alt="Python Certificate">
+            <h3>Python Programming</h3>
+            <p>Issued: April 2023 by Great Learning & Skill Void</p>
+            <a
+              href="certificate-of-completion-for-internship-on-deep-learning-30-days.pdf"
+              target="_blank">View PDF</a>
+          </div>
+          <!-- Add more certificates as needed -->
+        </div>
+      </section>
+    </main>
+
+    <script>
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('.nav-links a').forEach(x => x.classList.remove('active'));
+        a.classList.add('active');
+        const tab = a.getAttribute('data-tab');
+        document.querySelectorAll('.tab-content').forEach(sec => {
+          sec.classList.remove('active');
+          if (sec.id === tab) sec.classList.add('active');
+        });
+      });
+    });
+  </script>
+  </body>
+</html>
